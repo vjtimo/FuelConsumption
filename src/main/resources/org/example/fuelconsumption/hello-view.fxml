@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="323.0" prefWidth="245.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="org.example.fuelconsumption.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label fx:id="distanceLbl" text="Distance (km)" />
+      <TextField fx:id="distanceFld" />
+      <Label fx:id="fuelLbl" text="Fuel used (liters)" />
+      <TextField fx:id="fuelFld" />
+      <Button fx:id="calculate" text="Calculate" onAction="#onCalculateButtonClick"/>
+      <Label fx:id="result" />
+       <Button fx:id="english" text="English" onAction="#onEnglishButtonClick"/>
+       <Button fx:id="french" text="Français" onAction="#onFrenchButtonClick"/>
+       <Button fx:id="japanese" text="日本語" onAction="#onJapaneseButtonClick"/>
+       <Button fx:id="farsi" text="فارسی" onAction="#onFarsiButtonClick"/>
+   </children>
+</VBox>
